@@ -8,8 +8,9 @@
 # Usage: sudo ansible-playbook setup.yml -f 10
 
 ---
-- hosts: fedora
-  user: root
+- hosts: all
+#  user: root
+  become: true
   vars_files:
     - variables/application-versions.yml
     - variables/sensitive.yml
