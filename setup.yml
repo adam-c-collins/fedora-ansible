@@ -8,7 +8,7 @@
 # Usage: sudo ansible-playbook setup.yml -f 10
 
 ---
-- hosts: localhost
+- hosts: fedora
   user: root
   vars_files:
     - variables/application-versions.yml
